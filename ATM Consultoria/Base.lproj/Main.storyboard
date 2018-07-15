@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2kL-oX-BNg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ATM Consultoria-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ATM_Consultoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kQo-Vl-D7B">
+                                <rect key="frame" x="54.5" y="154.5" width="266" height="358"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Q-kf-0en">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="96"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="EYp-mg-qhX">
+                                                <rect key="frame" x="0.0" y="0.0" width="266" height="96"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Zj-4e-yHB">
+                                        <rect key="frame" x="13" y="106" width="240" height="252"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8xm-ik-nRT">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="121"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sP-Pg-NeI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="121"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="121" id="3cu-Ql-zfx"/>
+                                                            <constraint firstAttribute="width" constant="115" id="jSx-Bk-9Kr"/>
+                                                        </constraints>
+                                                        <state key="normal" image="menu_cliente.png"/>
+                                                        <connections>
+                                                            <segue destination="PAp-Z7-pwk" kind="show" id="Mxy-Px-zcm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bew-YM-g6o">
+                                                        <rect key="frame" x="125" y="0.0" width="115" height="121"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="121" id="eKm-jM-hrp"/>
+                                                            <constraint firstAttribute="width" constant="115" id="rsq-Uw-Squ"/>
+                                                        </constraints>
+                                                        <state key="normal" image="menu_empresa.png"/>
+                                                        <connections>
+                                                            <segue destination="YH8-ke-hRg" kind="show" id="1RI-f6-5rH"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WJJ-0K-eOw">
+                                                <rect key="frame" x="0.0" y="131" width="240" height="121"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoQ-BL-ybd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="121"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="121" id="mYd-km-LeO"/>
+                                                            <constraint firstAttribute="width" constant="115" id="pNW-so-sOU"/>
+                                                        </constraints>
+                                                        <state key="normal" image="menu_servico.png"/>
+                                                        <connections>
+                                                            <segue destination="Azo-Iq-UiX" kind="show" id="lfY-aa-Q7O"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVP-NB-oKu">
+                                                        <rect key="frame" x="125" y="0.0" width="115" height="121"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="121" id="2p2-2p-9JA"/>
+                                                            <constraint firstAttribute="width" constant="115" id="62G-XN-rnx"/>
+                                                        </constraints>
+                                                        <state key="normal" image="menu_contato.png"/>
+                                                        <connections>
+                                                            <segue destination="xdE-AT-BqV" kind="show" id="nnZ-WT-Mc5"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kQo-Vl-D7B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="J10-pT-Lwl"/>
+                            <constraint firstItem="kQo-Vl-D7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bLo-tB-aPn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ATM Consultoria" id="k0v-LA-JBp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="263"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Ze-xQ-cNS">
+            <objects>
+                <viewController id="Azo-Iq-UiX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pRK-2C-a7G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detalhe_servico.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfn-wV-TpJ">
+                                <rect key="frame" x="67" y="182" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4YT-Uu-6MO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serviços" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCc-Ib-sYV">
+                                <rect key="frame" x="100" y="318" width="174.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jPS-6x-MFv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.19201254844665527" green="0.81811791658401489" blue="0.78417938947677612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rT2-Na-YhE" firstAttribute="trailing" secondItem="gfn-wV-TpJ" secondAttribute="trailing" constant="67" id="0rd-sj-8Rt"/>
+                            <constraint firstItem="PCc-Ib-sYV" firstAttribute="top" secondItem="gfn-wV-TpJ" secondAttribute="bottom" constant="8" id="5BQ-ej-tKo"/>
+                            <constraint firstItem="rT2-Na-YhE" firstAttribute="trailing" secondItem="PCc-Ib-sYV" secondAttribute="trailing" constant="100" id="7uW-dZ-Frr"/>
+                            <constraint firstItem="PCc-Ib-sYV" firstAttribute="centerY" secondItem="pRK-2C-a7G" secondAttribute="centerY" id="N9m-wc-HSM"/>
+                            <constraint firstItem="PCc-Ib-sYV" firstAttribute="leading" secondItem="rT2-Na-YhE" secondAttribute="leading" constant="100" id="fHw-tl-Prq"/>
+                            <constraint firstItem="gfn-wV-TpJ" firstAttribute="leading" secondItem="rT2-Na-YhE" secondAttribute="leading" constant="67" id="uaT-4S-XlA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rT2-Na-YhE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MuK-IP-agl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688" y="-703"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UYf-Eu-nLQ">
+            <objects>
+                <viewController id="xdE-AT-BqV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BJK-Yi-dZd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contato" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCE-qa-uCK">
+                                <rect key="frame" x="100" y="318" width="174.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="98h-wE-hcz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.36000546813011169" green="0.70280295610427856" blue="0.5196908712387085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detalhe_contato.png" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-CB-g1r">
+                                <rect key="frame" x="67" y="182" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="VUf-hC-yb6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c0d-CB-g1r" firstAttribute="leading" secondItem="zRM-ZY-uFN" secondAttribute="leading" constant="67" id="H0t-0p-YLc"/>
+                            <constraint firstItem="zRM-ZY-uFN" firstAttribute="trailing" secondItem="CCE-qa-uCK" secondAttribute="trailing" constant="100" id="R35-UF-VhD"/>
+                            <constraint firstItem="CCE-qa-uCK" firstAttribute="top" secondItem="c0d-CB-g1r" secondAttribute="bottom" constant="8" id="TcC-Sm-IWQ"/>
+                            <constraint firstItem="CCE-qa-uCK" firstAttribute="leading" secondItem="zRM-ZY-uFN" secondAttribute="leading" constant="100" id="b9w-Xq-iYA"/>
+                            <constraint firstItem="CCE-qa-uCK" firstAttribute="centerY" secondItem="BJK-Yi-dZd" secondAttribute="centerY" id="lpU-bC-HFm"/>
+                            <constraint firstItem="zRM-ZY-uFN" firstAttribute="trailing" secondItem="c0d-CB-g1r" secondAttribute="trailing" constant="67" id="sHR-0m-qvV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zRM-ZY-uFN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rzr-9b-wnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2396" y="-702.09895052473769"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Ed-bg-t03">
+            <objects>
+                <viewController id="YH8-ke-hRg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="46E-X4-1dH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detalhe_empresa.png" translatesAutoresizingMaskIntoConstraints="NO" id="riS-4a-pMI">
+                                <rect key="frame" x="67" y="182" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="UiA-ne-N88"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Empresa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pl-7h-p5E">
+                                <rect key="frame" x="100" y="318" width="174.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="n4L-Wq-OcE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.92478400468826294" green="0.44211530685424805" blue="0.28299281001091003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Nv-w6-TIB" firstAttribute="trailing" secondItem="5pl-7h-p5E" secondAttribute="trailing" constant="100" id="5IY-en-DBI"/>
+                            <constraint firstItem="riS-4a-pMI" firstAttribute="leading" secondItem="5Nv-w6-TIB" secondAttribute="leading" constant="67" id="Aab-t1-Ibx"/>
+                            <constraint firstItem="5pl-7h-p5E" firstAttribute="leading" secondItem="5Nv-w6-TIB" secondAttribute="leading" constant="100" id="UaN-sf-RM3"/>
+                            <constraint firstItem="5Nv-w6-TIB" firstAttribute="trailing" secondItem="riS-4a-pMI" secondAttribute="trailing" constant="67" id="bjr-Mq-kga"/>
+                            <constraint firstItem="5pl-7h-p5E" firstAttribute="top" secondItem="riS-4a-pMI" secondAttribute="bottom" constant="8" id="eXW-Ty-Gq2"/>
+                            <constraint firstItem="5pl-7h-p5E" firstAttribute="centerY" secondItem="46E-X4-1dH" secondAttribute="centerY" id="iWJ-ja-Neu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Nv-w6-TIB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WT3-jJ-zE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="-702"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YGt-N0-iq4">
+            <objects>
+                <viewController id="PAp-Z7-pwk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bWE-Nt-g4R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nossos Clientes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxC-jC-kvg">
+                                <rect key="frame" x="100" y="318" width="174.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="adD-YX-mgO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.7255968451499939" green="0.78862029314041138" blue="0.25693833827972412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detalhe_cliente.png" translatesAutoresizingMaskIntoConstraints="NO" id="HLE-s6-0kK">
+                                <rect key="frame" x="67" y="182" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="k0R-H0-GG1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QhA-9I-rd5" firstAttribute="trailing" secondItem="HLE-s6-0kK" secondAttribute="trailing" constant="67" id="8b9-c7-FES"/>
+                            <constraint firstItem="YxC-jC-kvg" firstAttribute="leading" secondItem="QhA-9I-rd5" secondAttribute="leading" constant="100" id="YpQ-c0-nEj"/>
+                            <constraint firstItem="HLE-s6-0kK" firstAttribute="leading" secondItem="QhA-9I-rd5" secondAttribute="leading" constant="67" id="asQ-5Q-4dm"/>
+                            <constraint firstItem="QhA-9I-rd5" firstAttribute="trailing" secondItem="YxC-jC-kvg" secondAttribute="trailing" constant="100" id="dkj-gR-Z3c"/>
+                            <constraint firstItem="YxC-jC-kvg" firstAttribute="top" secondItem="HLE-s6-0kK" secondAttribute="bottom" constant="8" id="eXm-ZL-71L"/>
+                            <constraint firstItem="YxC-jC-kvg" firstAttribute="centerY" secondItem="bWE-Nt-g4R" secondAttribute="centerY" id="wae-6o-2fi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QhA-9I-rd5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3a-Y9-aBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231.19999999999999" y="-702.99850074962524"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jmW-6P-7dd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2kL-oX-BNg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="51u-Ct-JY4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hb1-5c-hx5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRz-N1-hEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="263"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="detalhe_cliente.png" width="85" height="90"/>
+        <image name="detalhe_contato.png" width="112" height="118"/>
+        <image name="detalhe_empresa.png" width="85" height="79"/>
+        <image name="detalhe_servico.png" width="85" height="79"/>
+        <image name="logo.png" width="266" height="96"/>
+        <image name="menu_cliente.png" width="115" height="121"/>
+        <image name="menu_contato.png" width="115" height="121"/>
+        <image name="menu_empresa.png" width="115" height="121"/>
+        <image name="menu_servico.png" width="115" height="121"/>
+    </resources>
+</document>

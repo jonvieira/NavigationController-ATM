@@ -1,10 +1,8 @@
-//
 //  ViewController.swift
 //  ATM Consultoria
 //
 //  Created by Desenvolvimento on 14/02/18.
 //  Copyright © 2018 Jonas. All rights reserved.
-//
 
 import UIKit
 
